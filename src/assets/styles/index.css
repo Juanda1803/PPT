@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: "Ranchers", cursive;
+}
+h1,
+h2 {
+  margin: 0;
+}
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: #8de8c6;
+  text-align: center;
+}
+.header > h1 {
+  font-size: 60px;
+}
+.score__container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+.score-container__item {
+  font-size: 30px;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game {
+  width: 100%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.game__container {
+  width: 80%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.game-container__buttons > img {
+  width: 220px;
+  height: 220px;
+  border-radius: 1000px;
+}
+.button {
+  width: 600px;
+  height: 150px;
+  background: #ecf0f1;
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 300px);
+  font-size: 60px;
+}
+.item__container {
+  display: flex;
+  flex-direction: row;
+}
+.green {
+  background-color: rgba(22, 234, 234, 0.3);
+}
+.yellow {
+  background-color: rgba(120, 150, 50, 0.3);
+}
+.red {
+  background-color: rgba(255, 2, 23, 0.3);
+}
+.item-green {
+  height: 100px;
+  width: 50px;
+}
+.item-yellow {
+  height: 100px;
+  width: 50px;
+}
+.item-red {
+  height: 100px;
+  width: 50px;
+}
+
+.hire {
+  display: none;
+}

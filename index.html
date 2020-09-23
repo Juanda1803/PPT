@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLayGame</title>
+    <link rel="stylesheet" href="./src/assets/styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Piedra, Papel o Tijera</h1>
+    </header>
+
+    <section class="game">
+      <div class="score__container">
+        <div class="score-container__item">
+          <h1>Score Player</h1>
+          <div class="item__container">
+            <div class="item-green" id="greenP"></div>
+            <div class="item-yellow" id="yellowP"></div>
+            <div class="item-red" id="redP"></div>
+          </div>
+        </div>
+
+        <div class="score-container__item">
+          <h1>Score Computer</h1>
+          <div class="item__container">
+            <div class="item-green" id="greenC"></div>
+            <div class="item-yellow" id="yellowC"></div>
+            <div class="item-red" id="redC"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game__container">
+        <a class="game-container__buttons" id="rock">
+          <img
+            class="game-container__buttons"
+            src="./src/assets/static/rock.png"
+            alt="rock"
+          />
+        </a>
+        <a class="game-container__buttons" id="paper"
+          ><img src="./src/assets/static/scissors.png" alt="scissors"
+        /></a>
+        <a class="game-container__buttons" id="scissors"
+          ><img src="./src/assets/static/paper.png" alt="paper"
+        /></a>
+        <button class="button" id="start" onclick="startGame()">Start</button>
+      </div>
+    </section>
+    <script src="src/index.js"></script>
+  </body>
+</html>
